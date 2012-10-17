@@ -1,0 +1,12 @@
+  <% @posts.each do |post| %>
+    <p> Can see post! </p>
+    <h1><%= link_to post.title, post %></h1>
+    <p><%= friendly_date(post.created_at) %></p>
+    <p><%= post.author %></p>
+    <p><%= post.body %></p>
+    <p>
+      <%= link_to 'Show', post %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
+  <% end %>

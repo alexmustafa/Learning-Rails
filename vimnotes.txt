@@ -1,0 +1,21 @@
+Vim notes:
+
+Word Movement: w - move to next word start, b - move to previous word start, e - move to end of next work, ge - move to end of previous word capitalize to move to next/previous whitespace word
+
+Move to Start or End of Line: 0 (start) ^ (first non-whitespace char), and $ (end)
+
+Move to Character in Line: fx and Fx (move to next character x or previous character x), or tx and Tx (move to one character before next character or one character just ahead of previous x)
+
+Matching parentheses: use % to match parentheses or to find next parenthesis
+
+Moving to line on the screen: H (top of screen), M (middle of screen), L(bottom of screen)
+
+How to tell where you are: CTRL-G
+
+Scrolling: CTRL-U and CTRL-D scroll a page up / down, CTRL-Y and CTRL-E scroll one line at a time, CTRL-B and CTRL-F scroll the whole screen except for the extreme two lines, zt and zb put the current line at the top or the bottom.
+
+Search: / forwards, ? backards, n and N continue the search in that particular direction, * and # search for the currently selected word
+ /\<the\> search for word that both begins and ends in the, thus "the"
+ enable highlighting search results by set hlsearch
+
+Marks: 
