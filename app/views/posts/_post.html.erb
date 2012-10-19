@@ -1,5 +1,6 @@
   <% @posts.each do |post| %>
     <p> Can see post! </p>
+
     <h1><%= link_to post.title, post %></h1>
     <p><%= friendly_date(post.created_at) %></p>
     <p><%= post.author %></p>
